@@ -17,11 +17,11 @@ func removeDuplicates(nums []int) int {
 
 	index := 0
 
-	for i := 0; i < len(nums); i++ {
-		if len(nums) == 1 {
-			break
-		}
+	if len(nums) == 1 {
+		return length
+	}
 
+	for i := 0; i < len(nums); i++ {
 		if nums[index] == nums[i] {
 			continue
 		}
