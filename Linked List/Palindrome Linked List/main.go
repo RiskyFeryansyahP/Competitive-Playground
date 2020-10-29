@@ -44,6 +44,8 @@ func isPalindrome(head *ListNode) bool {
 	return true
 }
 
+// 1->2->3->4->nil
+// nil<-1<-2<-3<-4
 func reverseLinkedList(node *ListNode) *ListNode {
 	currentNode := node
 	var prev *ListNode
